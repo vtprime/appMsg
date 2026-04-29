@@ -1,13 +1,13 @@
-let frases = ["F1", "F2", "F3"];
-let frasesCopiada = [...frase];
+let frases=["Nunca foi sorte sempre foi Deus",
+"acredite em vocẽ mesmo e o universo vai conspirar a seu avor",
+"não espere o momento perfeito. Crie o moment perfeito e transforme seus sonhos em realidade"];
+
 function geradorMensagem(){
-  if(frases.length==0){
-    frases=[...frasesCopiada];
-  }
-  let indiceGerado = Math.floor(Math.random()*(frases.length));
-  let fraseGerada = frases[indiceGerado];
-  console.log(fraseGerada)
-  document.querySelector("#msg").textContent=fraseGerada;
-  frases.splice(indiceGerado,1);
+let indiceGerado= Math.floor(Math.random()*(frases.length));
+let fraseGerada= frases[indiceGerado];
+document.querySelector("#saída").textContent=fraseGerada;
+
+
+
+
 }
-geradorMensagem()

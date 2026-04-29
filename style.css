@@ -1,0 +1,77 @@
+/*configuração inicial*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing : 0;
+    }
+    
+    body{
+    background-color : rgb(59, 59, 71);/*mudar*/
+    color: rgb(230, 213, 213);/*mudar*/
+    display:flex;
+    justify-content : center;
+    align-items : center;
+    }
+    #app{
+    background : rgb(2, 49, 12);/*mudar*/
+    display:flex;
+    flex-direction:column;
+    width:380px;/*mudar*/
+    height:500px;/*mudar*/
+    padding:15px;/*mudar*/
+    border-radius: 15px;
+    box-shadow:0 0 30px rgba(0, 0, 0, 0.9);/*mudar*/
+    }
+    main{
+    padding : 30px;
+    height : 100%;
+    display: flex;
+    flex-direction : column;
+    align-items : center;
+    text-align : center;
+    }
+    nav{
+    border-top : 2px solid rgb(0, 0, 0);
+    display : flex;
+    align-items : center;
+    padding : 10px;
+    justify-content:space-between;
+    }
+    body{
+    min-height:100vh;
+    
+    }
+    #msg{
+    width:100%;
+    overflow-wrap : break-word;
+    word-wrap : break-word;
+    font-size : 18px;/*m*/
+    }
+    
+    button{
+    width:80px;/*m*/
+    height:80px;
+    background:radial-gradient(circle,rgb(0, 0, 0),rgb(36, 196, 15));/*m*/
+    border-radius:50%;
+    border:none;
+    cursor:pointer;
+    margin-top:auto;
+    color:azure;/*m*/
+    transition:0.3s;
+    }
+    button:hover{
+    scale:1.1;
+    }
+    
+    @media(max-width:480px){
+    
+    #app{
+    width:100vw;
+    height:100vh;
+    border-radius:0;
+    }
+    main{
+    padding:20px;
+    }
+    }
+    
